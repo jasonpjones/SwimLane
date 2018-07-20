@@ -1,0 +1,96 @@
+.test-container
+{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 70%;
+    height: 40%;
+    border: solid 1px blue;
+
+}
+.stage-lane-container
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 10px;
+    bottom: 0;
+    background-color: beige;
+
+}
+
+
+
+.stage-lane-header, .stage-lane-sub-header
+{
+    display: block;
+}
+.stage-lane-header
+{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.stage-lane-sub-header
+{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.stage-lane-lanes
+{
+    position: absolute;
+    top: 58px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: solid 1px black;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.stage-lane-lane
+{
+    display: inline-block;
+    width: 220px;
+    height: 99%;
+   /* overflow-y: auto; */   /* remove this to make the whole thing scroll. If you do this, you'll probably need to size all the divs to the height of tallest one with JS */
+
+}
+
+.stage-lane-lane:not(:first-child)
+{
+    border-left: solid black 1px;
+}
+.stage-lane-lane:last-child
+{
+    border-right: solid 1px black
+}
+
+.lane-header
+{
+    margin-left: 15px;
+
+}
+.stage-lane-opp-block
+{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    /* right: 0; */
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.stage-lane-opp
+{
+    width: 190px;
+    margin: 10px 10px 0 5px;
+    height: 45px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 1px gray;
+}
+
+
