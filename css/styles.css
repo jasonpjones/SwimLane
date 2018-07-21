@@ -101,4 +101,10 @@ span
     border: solid 1px gray;
 }
 
+.stage-lane-opp-name-label
+{
+    margin-left: 5px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
 
