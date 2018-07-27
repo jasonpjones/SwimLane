@@ -73,23 +73,18 @@ var fakeProcesses = [
 
 var fakeOpportunities = [
     {
-        "name":"Blowout Closeout Scooter 734",
-        "id":"B4F09462-DF5B-4E82-8933-1894766587EB",
-        "stageId":"45C93B54-C402-424B-9496-13B397563DB8",
-        "STATUSNUM":1
+        "id":"1A97BB3D-8296-4C17-99E7-0A5EA80220E1",
+        "name":"Promotion Closeout Closeout 300 test with some extra text even more what happens",
+        "stageId":"5B9CF851-B8F5-4329-ADA4-2E0F2492E1C8",
+        "estCloseDate":"2018-07-05T00:00:00",
+        "totalValue":52113.00,"weightedValue":43774.92
     },
-    {"name":"Scooter Super Big 900","id":"EB964145-0BE0-4CAF-A9C2-1F4BA53B14F2","stageId":"5B9CF851-B8F5-4329-ADA4-2E0F2492E1C8","STATUSNUM":2},
-    {"name":"Blowout Super Blowout 696","id":"0B4A62A1-0587-4CB8-9FD7-291DF307084D","stageId":"5B9CF851-B8F5-4329-ADA4-2E0F2492E1C8","STATUSNUM":1},
-    {"name":"Big Big Closeout 136","id":"E9CDD61C-AB08-4D77-B5AB-77708999C31A","stageId":"5B9CF851-B8F5-4329-ADA4-2E0F2492E1C8","STATUSNUM":1},
-    {"name":"Big Product Product 692","id":"1F4E677C-C589-4EE8-82D5-780092B01B88","stageId":"F29BE26F-E716-4CE4-ABDE-1C563C8D52BF","STATUSNUM":1},
-    {"name":"Special Product Special 212","id":"F0AD73E0-1C2B-4913-BD82-7B0C48B4137D","stageId":"9A704183-7EB3-4999-A053-4BB79E1564A7","STATUSNUM":1},
-    {"name":"Closeout Special Sale 722","id":"6BB63335-FA04-443B-81AD-AD1920A84DFC","stageId":"FA8DC285-526B-4022-A928-524406E175BF","STATUSNUM":0},
-    {"name":"Super Super Product 686","id":"C309AD7B-37A6-455F-982D-C23E5B5D090B","stageId":"FA8DC285-526B-4022-A928-524406E175BF","STATUSNUM":2},
-    {"name":"Blowout Closeout Product 771","id":"44C0B38F-853A-457D-A93F-D3DB7F4E4C47","stageId":"9A704183-7EB3-4999-A053-4BB79E1564A7","STATUSNUM":1},
-    {"name":"Promotion Scooter Promotion 210","id":"745431F9-ABDC-480C-AFD8-DE7F0DE71464","stageId":"45C93B54-C402-424B-9496-13B397563DB8","STATUSNUM":0},
-    {"name":"Scooter Product Promotion 469","id":"49EE3897-55AA-4B21-9A1B-DEBE8AF0A4EF","stageId":"5B9CF851-B8F5-4329-ADA4-2E0F2492E1C8","STATUSNUM":2},
-    {"name":"Product Promotion Sale 42","id":"8C799999-85C3-4BA5-9CFA-E9E59C15A24B","stageId":"45C93B54-C402-424B-9496-13B397563DB8","STATUSNUM":2},
-    {"name":"Scooter Blowout Blowout 436","id":"C9E43820-74D2-4009-85C8-F8F53D502A2C","stageId":"FA8DC285-526B-4022-A928-524406E175BF","STATUSNUM":2}];
+    {"id":"C3187F32-61B3-4A20-95B8-0E5567C818BC","name":"Scooter Super Blowout 172","stageId":"F29BE26F-E716-4CE4-ABDE-1C563C8D52BF","estCloseDate":"2018-07-08T00:00:00","totalValue":1508.00,"weightedValue":1447.68},
+    {"id":"C1CC54C4-4B5E-442F-A92E-02A3FCA8F1B9","name":"Special Closeout Big 415","stageId":"5B9CF851-B8F5-4329-ADA4-2E0F2492E1C8","estCloseDate":"2018-07-08T00:00:00","totalValue":2088.00,"weightedValue":730.80},
+    {"id":"EACB5EA0-12AB-4960-B2E2-7B7DD396266D","name":"Sale Super Sale 61","stageId":"9A704183-7EB3-4999-A053-4BB79E1564A7","estCloseDate":"2018-07-10T00:00:00","totalValue":130.00,"weightedValue":115.70},
+    {"id":"D4CBD978-BDF8-4B33-AB85-DAF4F55AB79A","name":"Scooter Scooter Special 943","stageId":"F29BE26F-E716-4CE4-ABDE-1C563C8D52BF","estCloseDate":"2018-07-11T00:00:00","totalValue":7960.00,"weightedValue":2706.40},
+    {"id":"A7768EA7-0735-4EE1-B30D-47DEF4865EA1","name":"Big Promotion Blowout 444","stageId":"FA8DC285-526B-4022-A928-524406E175BF","estCloseDate":"2018-07-15T00:00:00","totalValue":1856.00,"weightedValue":798.08},
+    {"id":"17F77B8E-ADB9-4402-AFBC-26EB36F99270","name":"Promotion Super Big 146","stageId":"F29BE26F-E716-4CE4-ABDE-1C563C8D52BF","estCloseDate":"2018-08-01T00:00:00","totalValue":17520.00,"weightedValue":10161.60},
+    {"id":"0EE201B0-4256-4377-83C5-E51FC101316A","name":"Special Product Closeout 531","stageId":"F29BE26F-E716-4CE4-ABDE-1C563C8D52BF","estCloseDate":"2018-08-01T00:00:00","totalValue":3240.00,"weightedValue":2916.00}
 
-
-
+];

@@ -5,6 +5,9 @@ ActPipeline.StageLaneComponent = function() {
     this.data = new ActPipeline.StageLaneData();
     this.targetDiv = null;
     this.processId = null;
+    this.strings = ActPipeline.ComponentStrings.stageLaneComponent;
+
+    this.processName = "Act! Sales Cycle";      //todo: comes from appUtils
 };
 ActPipeline.StageLaneComponent.prototype = {
     construct: function(targetDiv, processId) {
@@ -24,9 +27,19 @@ ActPipeline.StageLaneComponent.prototype = {
     },
     buildShell: function() {
         var container = $("<div>", { class: 'stage-lane-container' }),
-            header = $("<span>", { class: 'stage-lane-header', text:  'Act! Sales Cycle Opportunties'}),
-            subHeader = $("<span>", { class: 'stage-lane-sub-header', text:  "Drag an opportunity to another lane to update its stage."});
-        container.append(header, subHeader);
+            headerDiv = ($("<div>", { class: "card-header"})),
+            headerTitle = ($("<span>", { class: "card-header-title", text: String.format("{0} {1}", this.processName, this.strings.opportunities) })),
+            infoImgDiv = $("<div>", { class: 'info-image-div'}),
+            infoImgImg = $("<img>", { src: 'images/info.png', class: 'card-header-image', title: '' });
+
+        infoImgDiv.tooltip({
+            content: this.strings.dragDropInfo
+        });
+
+        headerDiv.append(headerTitle);
+        infoImgDiv.append(infoImgImg);
+        headerDiv.append(infoImgDiv);
+        container.append(headerDiv);
         return container;
     },
     buildLanes: function() {
@@ -46,8 +59,8 @@ ActPipeline.StageLaneComponent.prototype = {
     fillLanes: function() {
         var opps = this.data.opportunities;
         opps.forEach(function(opp) {
-            var oppDiv = $("<div>", { class: 'stage-lane-opp shadow'}),
-                nameLabel = $("<span>", { class: 'stage-lane-opp-name-label', text: opp.name });
+            var oppDiv = $("<div>", { class: 'stage-lane-opp shadow' }),
+                nameLabel = $("<div>", { class: 'stage-lane-opp-name-label', text: opp.name });
             oppDiv.append(nameLabel);
             $(".stage-lane-opp-block[data-stage-id='" + opp.stageId.toLowerCase() + "']").append(oppDiv);
         });
@@ -69,7 +82,7 @@ ActPipeline.StageLaneComponent.prototype = {
                 //$(this).append($(ui.draggable));
                 $(this).append(ui.draggable);
                 //ui.draggable.css('background-color', "#0264B6");
-                ui.draggable.animate({"background-color":  "#0264B6", "color": "#ffffff"}, 1000)
+                ui.draggable.animate({"background-color":  "#0264B6", "color": "#ffffff"}, 200)
             }
         });
     }

@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="lib/css/jquery-ui.min.css" />
 
     <script src="lib/jquery-3.1.1.min.js"></script>
     <script src="lib/jquery-ui.min.js"></script>
     <script src="lib/lodash-3.5.0.min.js"></script>
     <script src="src/stage-lane-component.js"></script>
     <script src="src/stage-lane-data.js"></script>
+    <script src="i18n/component_strings.js"></script>
 </head>
 <body>
 
@@ -73,6 +75,21 @@
 
 </body>
 <script>
+    if (!String.format) {
+        String.format = function () {
+            // The string containing the format items (e.g. "{0}") MUST be the first argument.
+            var theString = arguments[0];
+
+            // start with the second argument (i = 1)
+            for (var i = 1; i < arguments.length; i++) {
+                var regEx = new RegExp("\\{" + (i - 1) + "\\}", "g");  //g = global
+                theString = theString.replace(regEx, arguments[i]);
+            }
+            return theString;
+        };
+    }
+
+
     $(function() {
         var stageComponent = new ActPipeline.StageLaneComponent();
         stageComponent.construct($("#targetDiv"), "2380e83d-cef4-4b6d-ad15-dc9a558431ab");

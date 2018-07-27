@@ -1,4 +1,21 @@
-span
+.card-header
+{
+    font-size: 18px;
+    background-color: #39464F;
+    color: white;
+    padding: .5rem;
+    font-weight: bold;
+}
+.info-image-div
+{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    float: right;
+    margin-left: 8px;
+}
+
+span, div
 {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -13,7 +30,7 @@ span
     top: 100px;
     left: 20px;
     width: 70%;
-    height: 40%;
+    height: 45%;
     border: solid 1px blue;
 
 }
@@ -22,7 +39,7 @@ span
     position: absolute;
     top: 0;
     right: 0;
-    left: 10px;
+    left: 0;
     bottom: 0;
   /*  background-color: beige; */
 
@@ -44,6 +61,7 @@ span
 {
     font-size: 14px;
     margin-bottom: 5px;
+    margin-left: 8px;
 }
 
 .stage-lane-lanes
@@ -88,7 +106,8 @@ span
     top: 20px;
     bottom: 0;
     overflow-y: auto;
-    width: 219px
+    width: 219px;
+    border-top: solid 1px black;
 }
 
 .stage-lane-opp
@@ -103,9 +122,11 @@ span
 
 .stage-lane-opp-name-label
 {
-    margin-left: 5px;
-    font-size: 12px;
+    margin: 5px;
+    font-size: 14px;
     text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .shadow {
