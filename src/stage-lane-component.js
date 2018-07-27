@@ -25,7 +25,7 @@ ActPipeline.StageLaneComponent.prototype = {
     buildShell: function() {
         var container = $("<div>", { class: 'stage-lane-container' }),
             header = $("<span>", { class: 'stage-lane-header', text:  'Act! Sales Cycle Opportunties'}),
-            subHeader = $("<span>", { class: 'stage-lane-sub-header', text:  "Drag an opportunity to another stage lane to update it's stage."});
+            subHeader = $("<span>", { class: 'stage-lane-sub-header', text:  "Drag an opportunity to another lane to update its stage."});
         container.append(header, subHeader);
         return container;
     },
@@ -46,7 +46,7 @@ ActPipeline.StageLaneComponent.prototype = {
     fillLanes: function() {
         var opps = this.data.opportunities;
         opps.forEach(function(opp) {
-            var oppDiv = $("<div>", { class: 'stage-lane-opp'}),
+            var oppDiv = $("<div>", { class: 'stage-lane-opp shadow'}),
                 nameLabel = $("<span>", { class: 'stage-lane-opp-name-label', text: opp.name });
             oppDiv.append(nameLabel);
             $(".stage-lane-opp-block[data-stage-id='" + opp.stageId.toLowerCase() + "']").append(oppDiv);
@@ -66,7 +66,10 @@ ActPipeline.StageLaneComponent.prototype = {
             /* activeClass: "ui-state-default",
              hoverClass: "ui-state-hover", */
             drop: function(event, ui) {
-                $(this).append($(ui.draggable));
+                //$(this).append($(ui.draggable));
+                $(this).append(ui.draggable);
+                //ui.draggable.css('background-color', "#0264B6");
+                ui.draggable.animate({"background-color":  "#0264B6", "color": "#ffffff"}, 1000)
             }
         });
     }

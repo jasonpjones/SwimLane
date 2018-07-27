@@ -25,11 +25,6 @@ ActPipeline.StageLaneData.prototype = {
 
 };
 
-
-
-
-
-
 var fakeProcesses = [
     {
         id: "2380e83d-cef4-4b6d-ad15-dc9a558431ab",
