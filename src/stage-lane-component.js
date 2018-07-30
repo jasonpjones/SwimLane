@@ -74,14 +74,11 @@ ActPipeline.StageLaneComponent.prototype = {
             var oppDiv = $("<div>", { class: 'stage-lane-opp shadow' }),
                 nameLabel = $("<div>", { class: 'stage-lane-opp-name-label', text: opp.name });
             oppDiv.append(nameLabel);
-
-
             $targetLane = $(".stage-lane-opp-block[data-stage-id='" + opp.stageId.toLowerCase() + "']");
             bgColor = $targetLane.attr('data-bg-color');
             fgColor = $targetLane.attr('data-fg-color');
             oppDiv.css({ "background-color": bgColor, "color" : fgColor });
             $targetLane.append(oppDiv);
-            //$(".stage-lane-opp-block[data-stage-id='" + opp.stageId.toLowerCase() + "']").append(oppDiv);
         });
     },
     setUpDragDrop: function() {
@@ -104,7 +101,7 @@ ActPipeline.StageLaneComponent.prototype = {
                     fgColor = $tgt.attr('data-fg-color');
 
                 $tgt.append($oppBlock);
-                $oppBlock.animate({ "background-color": bgColor, "color": fgColor}, 200);
+                $oppBlock.animate({ "background-color": bgColor, "color": fgColor}, 800);
 
                 //$(this).append($(ui.draggable));
             //    $(this).append(ui.draggable);

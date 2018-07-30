@@ -4,6 +4,6 @@
 ActPipeline.ComponentStrings = {
     stageLaneComponent: {
         opportunities: "Opportunities",
-        dragDropInfo: "Drag and opportunity to another lane to update its stage."
+        dragDropInfo: "Opportunities can be dragged to another lane to update their stage."
     }
 };
