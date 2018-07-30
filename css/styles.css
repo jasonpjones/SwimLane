@@ -23,7 +23,6 @@ span, div
     user-select:none;
 }
 
-
 .test-container
 {
     position: absolute;
@@ -41,11 +40,7 @@ span, div
     right: 0;
     left: 0;
     bottom: 0;
-  /*  background-color: beige; */
-
 }
-
-
 
 .stage-lane-header, .stage-lane-sub-header
 {
